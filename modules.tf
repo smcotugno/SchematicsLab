@@ -11,6 +11,7 @@ module "shopCluster" {
   myOrg                       = "${var.myOrg}"
   mySpace                     = "${var.mySpace}"
   myClustername               = "${var.myClustername}"
+  region	              = "${var.region}"
 }
 
 ##############################################################################
@@ -24,6 +25,7 @@ module "shopCluster" {
 //   myOrg                       = "${var.myOrg}"
 //   mySpace                     = "${var.mySpace}"
 //   myClustername               = "${var.myClustername}"
+//   region	                 = "${var.region}"
 //   private_vlan_id             = "${var.private_vlan_id}"
 //   public_vlan_id              = "${var.public_vlan_id}"
 // }
@@ -46,6 +48,7 @@ module "shopDBCloudant" {
   ibm_bmx_api_key             = "${var.ibm_bmx_api_key}"
   myOrg                       = "${var.myOrg}"
   mySpace                     = "${var.mySpace}"
+  region	              = "${var.region}"
   subdir                      = "./cloudant"
 }
 
