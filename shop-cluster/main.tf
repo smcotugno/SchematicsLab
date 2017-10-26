@@ -43,7 +43,7 @@ data "ibm_container_cluster_config" "cluster_cfg" {
 ################################################
 resource "ibm_container_cluster" "shop_cluster" {
   name                        = "${var.myClustername}"
-  datacenter                  = "dal10"
+  datacenter                  = "${var.datacenter}"
   machine_type                = "u1c.2x4"
   isolation                   = "public"
   public_vlan_id              = "${var.public_vlan_id}"
