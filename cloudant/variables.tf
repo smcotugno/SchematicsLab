@@ -22,6 +22,11 @@ variable "region" {
   default                     = "eu-gb"
 }
 
+variable "datacenter" {
+  type                        = "string"
+  default                     = "dal10"
+  description                 = "Your datacenter. check with 'bx cs locations'"
+}
 variable "subdir" {
   default                     = "."
 }
