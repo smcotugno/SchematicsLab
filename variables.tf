@@ -13,12 +13,6 @@ variable "ibm_sl_api_key" {
   description                 = "Your IBM Cloud API Key"
 }
 
-variable "foo" {
-  type                        = "string"
-  description                 = "Bluemix"
-  default                     = "foobar"
-}
-
 variable "region" {
   type                        = "string"
   description                 = "Bluemix region"
